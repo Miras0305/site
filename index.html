@@ -3,45 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Мирас Толеутаев - Студент АЛТ</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            line-height: 1.6;
         }
+        
         header {
             text-align: center;
-            margin-bottom: 40px;
+            padding: 40px 0;
         }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 14px;
+            margin: 0 auto 20px;
+        }
+        
         h1 {
-            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
-        .content {
-            background: #f8f9fa;
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h2 {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .info-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        footer {
+            text-align: center;
             padding: 20px;
-            border-radius: 8px;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на мой сайт! 👋</h1>
-        <p>Сайт находится в разработке</p>
-    </header>
-    
-    <div class="content">
-        <h2>О сайте</h2>
-        <p>Это временная страница. Основной контент будет добавлен позже.</p>
+    <div class="container">
+        <header>
+            <div class="profile-img">Ваше фото</div>
+            <h1>Мирас Толеутаев</h1>
+            <p class="subtitle">Студент университета АЛТ в Алматы</p>
+        </header>
         
-        <h2>Контакты</h2>
-        <p>Свяжитесь со мной через GitHub: <a href="https://github.com/miras0305">miras0305</a></p>
+        <section>
+            <h2>Мен туралы</h2>
+            <p>Мен Толеутаев Мирас жасым 18-де ALT универінде студентпін.</p>
+        </section>
+        
+        <section>
+            <h2>Білімі</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>ALT University</h3>
+                    <p>Студент, факультет програмдық инженерия</p>
+                    <p>2025 - настоящее время</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Контакты</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>miras.toleutaev09@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Телефон</h3>
+                    <p>+7 700 670 9690</p>
+                </div>
+                <div class="info-item">
+                    <h3>Қала</h3>
+                    <p>Алматы, Қазахстан</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Әлеуметтік желілер</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mirzzz_07/?next=%2F">Instagram</a>
+                <a href="https://t.me/mirzzz_07">Telegram</a>
+                <a href="#">ВКонтакте</a>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2025 Мирас Толеутаев.</p>
+        </footer>
     </div>
-    
-    <footer style="margin-top: 40px; text-align: center; color: #666;">
-        <p>© 2024 Мой сайт</p>
-    </footer>
 </body>
 </html>
